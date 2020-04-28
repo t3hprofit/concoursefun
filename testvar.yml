@@ -1,0 +1,12 @@
+---
+platform: linux
+
+inputs:
+- name: product
+
+run:
+ path: bash
+ args:
+ - "-c"
+ - |
+   echo "$product_name"
