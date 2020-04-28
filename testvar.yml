@@ -14,4 +14,4 @@ run:
  - "-c"
  - |
    echo "hello world"
-   echo ${product-name}
+   cat product/url
