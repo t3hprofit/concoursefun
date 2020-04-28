@@ -7,14 +7,12 @@ resources:
     branch: master
     paths:
     - ./**
-    
 
 jobs:
   - name: GetFileName
     plan:
-      - aggregate:
-        - get: config
+      - get: config
       - task: GetFileName
         file: config/testvar.yml
         input_mapping:
-          product: config
+          product: "test"
